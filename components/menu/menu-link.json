@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_menu_menu_links",
+  "info": {
+    "name": "menuLink",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "link": {
+      "type": "text",
+      "required": true,
+      "maxLength": 2048,
+      "minLength": 1
+    },
+    "text": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100,
+      "minLength": 3
+    },
+    "newTab": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}
