@@ -1,0 +1,50 @@
+{
+  "collectionName": "components_page_review_details",
+  "info": {
+    "name": "reviewDetails",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "originalTitle": {
+      "type": "string",
+      "required": true
+    },
+    "director": {
+      "type": "string"
+    },
+    "creator": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "float",
+      "required": true,
+      "max": 10
+    },
+    "yearRelease": {
+      "type": "integer",
+      "required": true
+    },
+    "sinopse": {
+      "type": "text"
+    },
+    "cast": {
+      "type": "text"
+    },
+    "poster": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

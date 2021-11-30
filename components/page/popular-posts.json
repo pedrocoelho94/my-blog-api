@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_page_popular_posts",
+  "info": {
+    "name": "popularPosts",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "posts": {
+      "collection": "post"
+    }
+  }
+}

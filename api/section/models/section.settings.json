@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "sections",
+  "info": {
+    "name": "recommended",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "posts": {
+      "collection": "post"
+    }
+  }
+}

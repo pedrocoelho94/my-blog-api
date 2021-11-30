@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "most_populars",
+  "info": {
+    "name": "mostPopular"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page.popular-posts",
+      "required": true
+    }
+  }
+}
