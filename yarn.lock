@@ -1009,7 +1009,7 @@
     "@babel/helper-validator-identifier" "^7.15.7"
     to-fast-properties "^2.0.0"
 
-"@buffetjs/core@3.3.8":
+"@buffetjs/core@3.3.8", "@buffetjs/core@^3.3.8":
   version "3.3.8"
   resolved "https://registry.yarnpkg.com/@buffetjs/core/-/core-3.3.8.tgz#59899e85ccc238b57ec0d4fcbe9b160c480e5c00"
   integrity sha512-lDobqgC6aUigHPH7Cx82S/AzeMEer3SxepOZ9PMLxgyc0JeTK1jSAUTr6IYBrbZdYzvGX+zMFtneI4se93Q/Vg==
@@ -3798,7 +3798,7 @@ cross-env@^7.0.3:
   dependencies:
     cross-spawn "^7.0.1"
 
-cross-fetch@^3.0.4:
+cross-fetch@^3.0.4, cross-fetch@^3.1.4:
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.1.4.tgz#9723f3a3a247bf8b89039f3a380a9244e8fa2f39"
   integrity sha512-1eAtFWdIubi6T4XPy6ei9iUFoKpUkIF971QLN8lIvvvwueI65+Nw5haMNKUwfJxabqlIIDODJKGrQ66gxC0PbQ==
@@ -7104,6 +7104,13 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g=
 
+meilisearch@^0.23.0:
+  version "0.23.0"
+  resolved "https://registry.yarnpkg.com/meilisearch/-/meilisearch-0.23.0.tgz#eed5098bd147c13658c3f92e658df9cbfb9e8953"
+  integrity sha512-bLNonPJK2pJz2akjwolcc/Eqnz/GKJ7y1I4Flg4zjL+v0yPFyIGFFdfe0dw93JWFJWj/RbLS2Q6dDTobZQ9Ehg==
+  dependencies:
+    cross-fetch "^3.1.4"
+
 memoize-one@^5.0.0:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-5.2.1.tgz#8337aa3c4335581839ec01c3d594090cebe8f00e"
@@ -10144,6 +10151,14 @@ strapi-database@3.6.8:
     strapi-utils "3.6.8"
     verror "^1.10.0"
 
+strapi-deepsearch-service@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/strapi-deepsearch-service/-/strapi-deepsearch-service-0.5.0.tgz#b37f195547cce2110d71d527db1864feaad64d04"
+  integrity sha512-931CPBuAeU+QtpKT6ERanTGWrM5bsXQLZl94cJ1JIhqtEzR4GlQaWR8sXnVv6q1WSGg/ZjmgEh6+swaSoFX5Ag==
+  dependencies:
+    lodash "^4.17.12"
+    strapi-utils "^3.0.6"
+
 strapi-generate-api@3.6.8:
   version "3.6.8"
   resolved "https://registry.yarnpkg.com/strapi-generate-api/-/strapi-generate-api-3.6.8.tgz#e198e868e873e9134b1c1c1b71a2111e4c3edbba"
@@ -10383,6 +10398,14 @@ strapi-plugin-i18n@3.6.8:
     pluralize "8.0.0"
     strapi-utils "3.6.8"
 
+strapi-plugin-meilisearch@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-meilisearch/-/strapi-plugin-meilisearch-0.4.1.tgz#7f3b0be75b5e2fb72d78fb5c8fdc3976a5137906"
+  integrity sha512-w6WqUOyplUpSAh1hQyXNbeLicW0O+Dy/IpLWwPQnqTWLjpm1cReHt/X1o78hOdCD1lkeamZtgiAF5Gi2C+vwHA==
+  dependencies:
+    "@buffetjs/core" "^3.3.8"
+    meilisearch "^0.23.0"
+
 strapi-plugin-upload@3.6.8:
   version "3.6.8"
   resolved "https://registry.yarnpkg.com/strapi-plugin-upload/-/strapi-plugin-upload-3.6.8.tgz#5bc02fb299ccc62a909b273b2f51aedf607c7032"
@@ -10471,7 +10494,7 @@ strapi-provider-upload-local@3.6.8:
   resolved "https://registry.yarnpkg.com/strapi-provider-upload-local/-/strapi-provider-upload-local-3.6.8.tgz#4666269e96f2ae878f366ae091d09ea69fb0237b"
   integrity sha512-GkedrjO+T4DN649Ak0SMSS5Vdta0AoZRt9+IWLO9TGLZ7hjtIjnB60kGf0fQKspIhbS7DUqtwuzQAXTd8fXJOg==
 
-strapi-utils@3.6.8:
+strapi-utils@3.6.8, strapi-utils@^3.0.6:
   version "3.6.8"
   resolved "https://registry.yarnpkg.com/strapi-utils/-/strapi-utils-3.6.8.tgz#699bcd080117df526dfb7935115e47e1877d888a"
   integrity sha512-6tKHfkjrY3AfSv8sAg77Ix7meMttyd2efODY2dOKkKgdXDugdNwbl/AavjWL0xfywZaCNhxkNLLN/2Wvx8pO+w==

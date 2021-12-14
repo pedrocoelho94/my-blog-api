@@ -5,7 +5,9 @@
     "icon": "address-card",
     "description": ""
   },
-  "options": {},
+  "options": {
+    "searchable": true
+  },
   "attributes": {
     "title": {
       "type": "string",
