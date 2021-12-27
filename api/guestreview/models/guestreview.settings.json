@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guestreviews",
+  "info": {
+    "name": "guestreview"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "guestreviews"
+    }
+  }
+}

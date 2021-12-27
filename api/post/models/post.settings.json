@@ -47,8 +47,8 @@
       "required": true
     },
     "tags": {
-      "collection": "tag",
       "via": "posts",
+      "collection": "tag",
       "dominant": true
     },
     "categories": {

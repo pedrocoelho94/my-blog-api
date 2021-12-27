@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/guestreviews",
+      "handler": "guestreview.find",
+      "config": {
+        "policies": ["local-policy", "global::is-logged-in"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/guestreviews/all",
+      "handler": "guestreview.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/guestreviews/count",
+      "handler": "guestreview.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/guestreviews/:id",
+      "handler": "guestreview.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/guestreviews",
+      "handler": "guestreview.create",
+      "config": {
+        "policies": ["global::is-logged-in"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/guestreviews/:id",
+      "handler": "guestreview.update",
+      "config": {
+        "policies": ["global::is-logged-in"]
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/guestreviews/:id",
+      "handler": "guestreview.delete",
+      "config": {
+        "policies": ["global::is-logged-in"]
+      }
+    }
+  ]
+}
